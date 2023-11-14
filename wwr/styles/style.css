@@ -178,6 +178,7 @@ main section img{
     background-color: var(--accent2-color);
     grid-column: 1/11;
     grid-row: 4/9;
+    margin-bottom: 100px;
 }
 
 .msg{
@@ -203,7 +204,7 @@ main section img{
 footer{
     background-color: var(--accent2-color);
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -231,6 +232,39 @@ footer .social img{
     padding-top: 15px;
 }
 
+/* Rivers Page  */
+.hero-container{
+    display: flex;
+    z-index: -1;
+}
+
+.river-hero-img{
+    width: 100%;
+    margin-top: -100px;
+}
+
+.rivers-main{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.river-card{
+    background-color: #ffcb47;
+    text-align: left;
+    padding:10px;
+    margin:30px;
+
+}
+
+.river-card img{
+    width:100%;
+}
+
+.river-card p, h2{
+    padding: auto 30px;
+}
+
+/* Phone View */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
