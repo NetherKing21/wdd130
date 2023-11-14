@@ -260,10 +260,6 @@ footer .social img{
     width:100%;
 }
 
-.river-card p, h2{
-    padding: auto 30px;
-}
-
 /* Phone View */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
