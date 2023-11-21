@@ -248,6 +248,11 @@ footer .social img{
     margin: 0 auto;
 }
 
+.river-headline{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
 .river-card{
     background-color: #ffcb47;
     text-align: left;
