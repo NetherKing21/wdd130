@@ -1,0 +1,22 @@
+body{
+    margin: 0 auto;   
+    background-color: rgb(115,115,115);
+}
+
+.mainImage{
+    display: block;
+    margin: 0 auto;
+}
+
+.smallImage{
+    width: 15%;
+    height: 15%;
+    border: 10px rgb(68,68,68) solid;
+    border-radius: 1000px;
+    margin: 100px;
+}
+
+.images{
+    text-align: cester;
+    margin: 0;
+}
