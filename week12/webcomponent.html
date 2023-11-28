@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Just some random story</h1>
+    <h2>By chatgpt</h2>
+
+    <button class="accordion">Introduction</button>
+    <div class="panel">
+        <p>
+            Once upon a time in a quaint town nestled between rolling hills, there lived a young girl named Elara. She had an insatiable curiosity about the world around her and a heart brimming with kindness. Elara spent her days exploring the nooks and crannies of the town, discovering hidden paths and secrets that seemed to whisper tales of the past.</p>
+    </div>
+
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+        <p>One sunny morning, while wandering through the woods, Elara stumbled upon an ancient-looking book half-buried under a tangle of ivy. Its leather cover was weathered, and the pages seemed to hold untold stories. With a curious gleam in her eye, she carefully dusted off the book and opened it.</p>
+    </div>
+
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+         <p>To her surprise, the pages were filled with beautiful illustrations depicting a mystical land beyond anything she had ever imagined. The drawings danced with vibrant colors, portraying magical creatures, enchanted forests, and towering castles. But what captured Elara's attention the most was a map tucked between the pages, leading to a place marked as the "Valley of Whispers."</p>
+    </div>
+
+    <button class="accordion">Section 4</button>
+    <div class="panel">
+         <p>Driven by excitement and fueled by an adventurous spirit, Elara embarked on a journey to unravel the mysteries hidden within the ancient book. Following the map's intricate trails through dense forests and across sparkling rivers, she encountered peculiar beings—a mischievous sprite named Zephyr, a wise old owl who spoke in riddles, and a gentle giant who tended to the flora.</p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+</body>
+</html>
