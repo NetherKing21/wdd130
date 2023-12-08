@@ -30,6 +30,7 @@ header{
     background-color: var(--accent2-color);
     display: grid;
     grid-template-columns: 150px auto;
+    border-bottom: gray solid 1px;
 }
 .logo {
     width: 100px;
@@ -133,12 +134,13 @@ footer p a:hover {
     grid-template-columns: 1.25fr 2fr 1fr 2fr 1.25fr;
 }
 .home-main .card-layout {
-    /* align-items: center; */
     text-align: center;
     background-color: var(--secondary-color);
     border: var(--primary-color) solid 5px;
     margin: 20px;
     height: 396px;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 .home-main .card-layout h3 {
     font-size: 1.45em;
@@ -164,6 +166,11 @@ footer p a:hover {
     border: var(--primary-color) solid 3px;
     width: 150px;
     height: 40px;
+    justify-self: center;
+    align-self: center;
+}
+.home-main .center {
+    margin-top: 23%;
 }
 .home-main .card-layout:nth-of-type(1) {
     grid-column: 2/3;
@@ -188,4 +195,67 @@ footer p a:hover {
 .home-main .card-layout:nth-of-type(6) {
     grid-column: 4/5;
     grid-row: 3/4;
+}
+
+
+/* This section is for the REVIEW-MAIN */
+.review-main h2 {
+    grid-column: 2/3;
+    margin: 15px 0px 0px 0px;
+    font-size: 3em;
+}
+.review-main .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-row-gap: 25px;
+}
+.review-main .card-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: var(--accent1-color);
+}
+.review-main .img-container {
+    width: 80%;
+    margin: 10%;
+    box-sizing: border-box;
+    background-color: white;
+    border: var(--primary-color) solid 3px;
+    height: 221px;
+}
+.review-main .center {
+    margin-top: 20%;
+}
+.review-main .text-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.review-main .card-layout img {
+    width: 100%;
+}
+.review-main .card-layout h3 {
+    text-align: right;
+    margin: 25px 50px 0px 0px;
+    font-size: 1.75em;
+}
+.review-main .card-layout p {
+    padding: 15px 30px 15px 0px;
+    margin: 0px;
+}
+.review-main .card-layout:nth-of-type(1) {
+    grid-column: 2/3;
+}
+.review-main .card-layout:nth-of-type(2) {
+    grid-column: 2/3;
+}
+.review-main .card-layout:nth-of-type(3) {
+    grid-column: 2/3;
+}
+.review-main .card-layout:nth-of-type(4) {
+    grid-column: 2/3;
+}
+.review-main .card-layout:nth-of-type(5) {
+    grid-column: 2/3;
+}
+.review-main .card-layout:nth-of-type(6) {
+    grid-column: 2/3;
 }
