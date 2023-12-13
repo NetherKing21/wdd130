@@ -63,35 +63,45 @@ nav a:hover {
     margin-bottom: 50px;
 }
 .hero-banner img {
+    box-sizing: border-box;
     grid-row: 1/3;
     border-right: 10px solid var(--primary-color);
+    width: 100%;
+    height: 100%;
 }
 .hero-textbox {
-    grid-row: 1/3;
     text-align: center;
     width: 90%;
     margin: 0 auto;
 }
 .hero-textbox h2 {
-    font-size: 2em;
+    font-size: 3vw;
     margin-bottom: 0px;
 }
 .hero-textbox p {
-    font-size: 2em;
+    font-size: 2vw;
     margin-top: 10px;
     margin-bottom: 15px;
 }
-.hero-textbox .button {
-    display: inline-block;
+#hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-banner .button {
+    display: flex;
     box-sizing: border-box;
-    margin: 0% 4%;
-    padding: 4% 12%;
+    height: 80%;
+    width: 40%;
+    margin: 2% auto;
     font-size: 1em;
     border-radius: 4px;
     color: var(--primary-color);
     background-color: var(--accent2-color);
     border: 5px solid var(--primary-color);
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
 }
 .hero-textbox .button:hover {
     background-color: var(--accent1-color);
@@ -128,31 +138,41 @@ footer p a:hover {
 .home-main .card-grid {
     display: grid;
     grid-template-columns: 1.25fr 2fr 1fr 2fr 1.25fr;
+    grid-row-gap: 40px;
 }
 .home-main .card-layout {
     text-align: center;
     background-color: var(--secondary-color);
     border: var(--primary-color) solid 5px;
-    margin: 20px;
-    height: 396px;
+    box-sizing: border-box;
+    margin: 0px auto;
+    height: 100%;
+    width: 85%;
     display: grid;
     grid-template-columns: 1fr;
 }
 .home-main .card-layout h3 {
     font-size: 1.45em;
+    margin: 5%;
 }
 .home-main .card-layout p {
     margin: 10px;
 }
 .home-main .img-container {
-    height: 186px;
-    width: 50%;
+    height: 90%;
+    width: 70%;
     background-color: white;
     border: var(--primary-color) solid 3px;
     margin: 0 auto;
+    box-sizing: border-box;
+    align-self: center;
+}
+.home-main .center {
+    padding: 13% 0%;
 }
 .home-main .card-layout img {
     width: 100%;
+    height: 100%;
 }
 .home-main .card-layout button {
     font-size: 1.25em;
@@ -160,13 +180,13 @@ footer p a:hover {
     color: var(--primary-color);
     background-color: var(--accent2-color);
     border: var(--primary-color) solid 3px;
-    width: 150px;
-    height: 40px;
+    /* Change this to addapt */
+    width: 40%;
+    height: 80%;
+    padding: 3%;
     justify-self: center;
     align-self: center;
-}
-.home-main .center {
-    margin-top: 23%;
+    font-size: 100%;
 }
 .home-main .card-layout:nth-of-type(1) {
     grid-column: 2/3;
@@ -216,13 +236,13 @@ footer p a:hover {
     box-sizing: border-box;
     background-color: white;
     border: var(--primary-color) solid 3px;
-    height: 221px;
 }
 .review-main .card-layout img {
     width: 100%;
+    height: 100%;
 }
 .review-main .center {
-    margin-top: 20%;
+    padding: 15% 0%;
 }
 .review-main .text-container {
     display: grid;
